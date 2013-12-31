@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <!--Normalize CSS-->
+  <link href="<%= url('/normalize.css') %>" rel="stylesheet" type='text/css'>
+  
+  <!--Your CSS-->
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type='text/css'>
+  
+  <!--Google Web Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Coaching-app</h1>
+    </header>
+    <section class="content">
+			<%= yield %>
+    </section>
+    <footer>
+       &copy; Le Wagon 2013
+    </footer>
+  </div>
+</body>
+</html>
+
