@@ -1,5 +1,7 @@
 <h1><%= @coach_message if @coach_message%></h1>
 
+<% puts "self : #{self}" %>
+<% puts "self class: #{self.class}" %>
 <% puts "self instance variables from index template : #{self.instance_variables}" %>
 
 <form action="/coach" method="post">
