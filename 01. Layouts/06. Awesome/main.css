@@ -4,3 +4,43 @@
 	font-family: 'Open Sans', sans-serif;
 	padding
 }
+
+header {
+	background-color: white;
+	text-align: center;
+	height: 110px;
+	border-bottom: 1px solid grey;
+	position: fixed;
+	width: 940px;
+}
+
+header h1 {
+	font-size: 4em;
+}
+
+nav {
+	padding-top: 130px;
+	float: left;
+	width: 100px;
+	position: fixed;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0;
+	padding-bottom: 300px;
+}
+
+.content {
+	float: right;
+	width: 799px;
+	padding-top: 120px;
+	padding-left: 40px;
+	border-left: 1px solid grey;
+}
+
+footer {
+	border-top: 1px dotted grey;
+	padding-top: 10px;
+}
