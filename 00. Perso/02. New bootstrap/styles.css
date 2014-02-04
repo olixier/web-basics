@@ -1,0 +1,11 @@
+.navbar {
+	margin-bottom: 0;
+}
+
+.carousel-caption {
+	font-size: 3em;
+}
+
+#carousel-example-generic img {
+	max-height: 1000px;
+}

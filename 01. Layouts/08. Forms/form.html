@@ -32,7 +32,10 @@
     <section class="content">
       
       <!-- Here the button to launch your sign-up modal-->
-      <a class="btn btn-warning">Signup</a>
+      <div style="text-align:center">
+        <a href="#signupModal" role="button" class="btn btn-warning" data-toggle="modal">Signup Modal</a>
+      </div>
+      
       <!-- Look at Bootstrap doc to see how to link this button to your modal #signupModal-->
             
             
@@ -45,8 +48,69 @@
         </div>
         
         <div class="modal-body">
-          <form>
-            <!-- Here your awesome form-->
+          
+          <form class="form-horizontal">
+              
+            <div class="control-group">
+              <label class="control-label">Email</label>
+              <div class="controls">
+                <input type="text" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">Password</label>
+              <div class="controls">
+                <input type="password" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">Level</label>
+              <div class="controls">
+                <div class="btn-group" data-toggle="buttons-radio">
+                  <button type="button" class="btn btn-primary" style="opacity:0.6">Beginner</button>
+                  <button type="button" class="btn btn-primary" style="opacity:0.8">Amateur</button>
+                  <button type="button" class="btn btn-primary" style="opacity:100">Expert</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="controls">
+              <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Male
+              </label>
+              <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Female
+              </label>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">Budget</label>
+              <div class="controls">
+                <select>
+                  <option>< 30€</option>
+                  <option>30 - 50€</option>
+                  <option>>50 €</option>
+                  <option>>100 €</option> 
+                </select>
+              </div>
+            </div>
+
+            <div class="control-group">
+            <label class="checkbox">
+              <div class="controls">
+                <input type="checkbox"> Remember me!
+              </div>
+            </label>
+            </div>
+
+            <div class="controls">
+            <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+
           </form>
         </div>
         

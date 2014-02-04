@@ -1,0 +1,48 @@
+body{
+	background: rgb(242,240,241);
+}
+
+h1{
+	font-family: 'Exo 2', sans-serif;
+	font-size: 60px;
+	line-height: 60px;
+	color: rgb(243,97,95);
+}
+
+img{
+	width: 200px;
+	border-radius: 100px;
+}
+
+p{
+	font-family: helvetica
+}
+
+h2{
+	font-family: arial;
+}
+
+article h2{
+	font-family: courier;
+}
+
+article{
+	background: rgb(245,245,245);
+	border: 1px solid lightgrey;
+	padding: 30px;
+	margin: 20px;
+}
+
+.male header h2{
+	color: rgb(69,84,102);
+}
+
+.female header h2{
+	color: rgb(119,199,220);
+}
+
+#navbar{
+	background-color: rgb(80,88,98);
+	padding: 30px;
+
+}
