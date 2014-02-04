@@ -9,7 +9,20 @@ get '/' do
 end
 
 post '/coach' do
-  puts "self instance variable from POST '/coach' route handler: #{self.instance_variables}"
-  
-  "Implement your coach response ! params => #{params.inspect}"
+
+  answer = params[:what]
+  @coach_message = ""
+
+  if answer.downcase.include? "i am going to work"
+  	erb :congrats
+  else
+  	@coach_message += "I can feel your motivation son! " if answer == answer.upcase
+  	if answer.include? "?"
+  		@coach_message += "Silly question, just get dressed and go to work! What else?"
+  	else
+  		@coach_message += "Stupid, just get dressed and go to work! What else?"
+  	end
+  	erb :index
+  end
+
 end
