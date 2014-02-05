@@ -2,11 +2,14 @@
 
 <!--Here you should print general stats (number of games performed, avg score, longest word found,...)-->
 
-<p>***</p>
+<p><%= "Number of games played: #{$nb_games}" %></p>
+<p><%= "Average score: #{$avg_score.round(2)}" %></p>
+<p><%= "Highest score: #{$length_record}" %></p>
 
 <!--Here you should print a new game grid-->
 
-<p>***</p>
+<h2>New Grid:</h2>
+<p><%= @game.grid.reduce("") { |string, letter| string + " #{letter}"} %></p>
 
 <form action="/guess" method="post">
 	<form>
@@ -17,4 +20,4 @@
 </form>
 
 <!--Here you should print the results of the last game finished-->
-
+<p><%= @message %></p>
