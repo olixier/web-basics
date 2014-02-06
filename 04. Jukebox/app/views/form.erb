@@ -1,4 +1,11 @@
-<form action="/" method="post">
-  <!--implement the object-related form for an album	-->
+<form method="POST" action="/" role="form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="album[name]" placeholder="Enter name">
+  <label for="artist">Artist:</label>
+  <input type="text" id="artist" name="album[artist]" placeholder="Artist">
+  <label for="year">Year:</label>
+  <input type="text" id="year" name="album[year]">
+  <button type="submit">Submit</button>
 </form>
+
 <a href=/>Back to jukebox list</a>
