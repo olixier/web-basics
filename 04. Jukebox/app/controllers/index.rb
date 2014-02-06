@@ -7,14 +7,7 @@ get '/new' do
 end
 
 post '/' do
-  
-  hash = {}
-	params[:album].each_pair do |k, v|
-  	hash[k.to_sym] = v
-  	hash.delete(k)
-	end
-	Album.new(hash).save
-
+	Album.new(params[:album]).save
   erb :index
 end
 
