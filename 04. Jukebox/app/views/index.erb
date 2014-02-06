@@ -3,5 +3,5 @@
 <a href="/new">Add an album</a>
 
 <% $albums.each_with_index do |album, i| %>
-<p><a href=<%= "/:id?index=#{i}" %>><%= album.to_s %></a></p>
+<p><%= album.to_s %> <a href=<%= "/#{i}" %>>Show</a> <a href=<%= "/#{i}/edit" %>>Edit</a> <a href=<%= "/#{i}/delete" %>>Delete</a> </p>
 <% end %>

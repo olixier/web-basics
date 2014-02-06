@@ -1,10 +1,10 @@
-<form method="POST" action="/" role="form">
+<form method="POST" action=<%= "#{@post_url}" %> role="form">
   <label for="name">Name:</label>
-  <input type="text" id="name" name="album[name]" placeholder="Enter name">
+  <input type="text" id="name" name="album[name]" placeholder="Enter name" value="<%=@album.name%>">
   <label for="artist">Artist:</label>
-  <input type="text" id="artist" name="album[artist]" placeholder="Artist">
+  <input type="text" id="artist" name="album[artist]" placeholder="Artist" value="<%=@album.artist%>">
   <label for="year">Year:</label>
-  <input type="text" id="year" name="album[year]">
+  <input type="text" id="year" name="album[year]" value="<%=@album.year%>">
   <button type="submit">Submit</button>
 </form>
 
