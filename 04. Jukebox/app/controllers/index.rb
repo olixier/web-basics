@@ -10,7 +10,7 @@ end
 
 post '/' do
 	Album.new(params[:album]).save
-  erb :index
+  redirect to('/')
 end
 
 get '/:id' do 
@@ -26,10 +26,10 @@ end
 
 post '/:id' do
 	Album.find(params[:id].to_i).update(params[:album])
-  erb :index
+  redirect to('/')
 end
 
 get '/:id/delete' do 
   Album.find(params[:id].to_i).delete
-  erb :index
+  redirect to('/')
 end
